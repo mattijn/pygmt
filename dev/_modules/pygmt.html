@@ -121,6 +121,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/coastlines.html">Coastlines and borders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/plot.html">Plotting data points</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/text.html">Plotting text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/contour-map.html">Creating a map with contour lines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/configuration.html">Configuring PyGMT defaults</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Reference documentation</span></p>
@@ -223,7 +224,7 @@
 
 <span class="kn">import</span> <span class="nn">atexit</span> <span class="k">as</span> <span class="nn">_atexit</span>
 
-<span class="kn">from</span> <span class="nn">._version</span> <span class="kn">import</span> <span class="n">get_versions</span> <span class="k">as</span> <span class="n">_get_versions</span>
+<span class="kn">from</span> <span class="nn">pkg_resources</span> <span class="kn">import</span> <span class="n">get_distribution</span>
 
 <span class="c1"># Import modules to make the high-level GMT Python API</span>
 <span class="kn">from</span> <span class="nn">.session_management</span> <span class="kn">import</span> <span class="n">begin</span> <span class="k">as</span> <span class="n">_begin</span><span class="p">,</span> <span class="n">end</span> <span class="k">as</span> <span class="n">_end</span>
@@ -237,10 +238,9 @@
 <span class="kn">from</span> <span class="nn">.x2sys</span> <span class="kn">import</span> <span class="n">x2sys_init</span><span class="p">,</span> <span class="n">x2sys_cross</span>
 <span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">datasets</span>
 
-
-<span class="c1"># Get the version number through versioneer</span>
-<span class="n">__version__</span> <span class="o">=</span> <span class="n">_get_versions</span><span class="p">()[</span><span class="s2">&quot;version&quot;</span><span class="p">]</span>
-<span class="n">__commit__</span> <span class="o">=</span> <span class="n">_get_versions</span><span class="p">()[</span><span class="s2">&quot;full-revisionid&quot;</span><span class="p">]</span>
+<span class="c1"># Get semantic version through setuptools-scm</span>
+<span class="n">__version__</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;v</span><span class="si">{</span><span class="n">get_distribution</span><span class="p">(</span><span class="s2">&quot;pygmt&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">version</span><span class="si">}</span><span class="s1">&#39;</span>  <span class="c1"># e.g. v0.1.2.dev3+g0ab3cd78</span>
+<span class="n">__commit__</span> <span class="o">=</span> <span class="n">__version__</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;+g&quot;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># 0ab3cd78</span>
 
 <span class="c1"># Start our global modern mode session</span>
 <span class="n">_begin</span><span class="p">()</span>
@@ -416,7 +416,7 @@
         &copy; Copyright 2017-2020, The PyGMT Developers.
       
         <span class="commit">
-          Revision <code><a href="https://github.com/GenericMappingTools/pygmt/commit/2aa4aab1cc5cf925bbe01c9114d79ea9e1cb1a96">2aa4aab</a></code>.
+          Revision <code><a href="https://github.com/GenericMappingTools/pygmt/commit/c87336a">c87336a</a></code>.
         </span>
       
 

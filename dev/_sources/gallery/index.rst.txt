@@ -103,7 +103,7 @@ Coastlines and boundaries
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Use pygmt.Figure.coast to display shorelines as black lines. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Use pygmt.Figure.coast to display shorelines as black lines.">
 
 .. only:: html
 

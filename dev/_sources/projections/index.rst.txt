@@ -202,7 +202,7 @@ Cylindric Projections
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Clon0/lat0/width: lon0 and lat0 specifies the projection center. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Clon0/lat0/width: lon0 and lat0 specifies the projection center.">
 
 .. only:: html
 
