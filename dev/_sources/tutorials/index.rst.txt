@@ -55,6 +55,48 @@ This file is a placeholder and not included in the docs.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Plotting a contour map is handled by pygmt.Figure.grdcontour. ">
+
+.. only:: html
+
+ .. figure:: /tutorials/images/thumb/sphx_glr_contour-map_thumb.png
+     :alt: Creating a map with contour lines
+
+     :ref:`sphx_glr_tutorials_contour-map.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/contour-map
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Plotting a map of Earth relief can use the data accessed by the pygmt.datasets.load_earth_relie...">
+
+.. only:: html
+
+ .. figure:: /tutorials/images/thumb/sphx_glr_earth-relief_thumb.png
+     :alt: Plotting Earth relief
+
+     :ref:`sphx_glr_tutorials_earth-relief.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /tutorials/earth-relief
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Welcome to PyGMT! Here we&#x27;ll cover some of basic concepts, like creating simple figures and nam...">
 
 .. only:: html

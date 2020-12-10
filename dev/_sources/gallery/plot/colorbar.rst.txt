@@ -96,7 +96,7 @@ advanced styling options, see the full option list at
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.494 seconds)
+   **Total running time of the script:** ( 0 minutes  0.496 seconds)
 
 
 .. _sphx_glr_download_gallery_plot_colorbar.py:
